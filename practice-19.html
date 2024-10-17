@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "tab tab tab tab"
+                "one two three four";
+            gap: 20px;
+        }
+
+        .container>div:nth-child(1) {
+            background-color: aquamarine;
+            grid-area: tab;
+        }
+
+        .container>div:nth-child(2) {
+            background-color: yellow;
+            grid-area: one;
+        }
+
+        .container>div:nth-child(3) {
+            background-color: red;
+            grid-area: two;
+        }
+
+        .container>div:nth-child(4) {
+            background-color: gray;
+            grid-area: three;
+        }
+
+        .container>div:nth-child(5) {
+            background-color: green;
+            grid-area: four;
+        }
+
+        .container>div:nth-child(1)~div {
+            height: 200px;
+        }
+        @media screen  and (min-width:601px) and (max-width:900px){
+            .container{
+                grid-template-areas:
+                "tab tab "
+                "one two"
+                " three four";
+            }
+        }
+        @media screen  and (min-width:100px) and (max-width:600px){
+            .container{
+                grid-template-areas:
+                "tab  "
+                "one"
+                " two"
+                " three"
+                "four";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>Nevigation</div>
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+    </div>
+</body>
+
+</html>

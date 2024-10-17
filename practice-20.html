@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0px;
+            margin: 0px;
+         }
+        h1,
+        p {
+            text-align: center;
+            padding: 20px;
+        } 
+
+         .container>h1 {
+            font-weight: bolder;
+            padding: 20px;
+        } 
+        .container {
+            width: 80%;
+            margin: auto;
+            gap: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1Fr);
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            gap: 20px;
+        }
+
+
+
+
+        .container>div {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+
+        .container img {
+            width: 100%;
+        }
+
+        button {
+            padding: 10px 10px 10px 20px;
+            border-radius: 15px;
+            margin: 30px;
+            background-color: red;
+            color: white;
+            border: none;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1Fr);
+            text-align: center;
+            gap: 20px;
+            width: 70%;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .grid>div {
+
+            height: 100%;
+        }
+
+
+
+
+        @media screen and (min-width:320px) and (max-width:650px) {
+            .container {
+                grid-template-columns: repeat(2, 1Fr);
+            }
+
+
+            .grid {
+                grid-template-columns: repeat(2, 1Fr);
+            }
+
+        }
+
+        @media screen and (min-width:100px) and (max-width:320px) {
+            .container {
+                grid-template-columns: repeat(1, 1Fr);
+            }
+
+
+            .grid {
+                grid-template-columns: repeat(1, 1Fr);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>OUR SPECIALIST </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa voluptatibus id dolor? Ad repudiandae quisquam
+        corporis ullam, porro modi, vel reiciendis cum dolorum voluptates earum molestias minima, velit a.</p>
+
+    <div class="container">
+        <div>
+            <img src="img/doctor1.jpg.webp" alt="">
+            <h2>Himanshu Dwivedi</h2>
+            <h5>Sr Surgery Specialist</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nulla nihil placeat.</p>
+            <button>Know More</button>
+            <button>Book Now</button>
+        </div>
+        <div> <img src="img/doctor1.jpg.webp" alt="">
+            <h2>Himanshu Dwivedi</h2>
+            <h5>Sr Surgery Specialist</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nulla nihil placeat.</p>
+            <button>Know More</button>
+            <button>Book Now</button>
+        </div>
+        <div> <img src="img/doctor1.jpg.webp" alt="">
+            <h2>Himanshu Dwivedi</h2>
+            <h5>Sr Surgery Specialist</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nulla nihil placeat.</p>
+            <button>Know More</button>
+            <button>Book Now</button>
+        </div>
+        <div> <img src="img/doctor1.jpg.webp" alt="">
+            <h2>Himanshu Dwivedi</h2>
+            <h5>Sr Surgery Specialist</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nulla nihil placeat.</p>
+            <button>Know More</button>
+            <button>Book Now</button>
+        </div>
+    </div>
+    <div class="grid">
+        <div>
+            <img src="img/bottom_132437.jpeg" alt="">
+            <h4>Theth Weating</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus distinctio accusantium!
+                Eius, magnam. Incidunt?</p>
+        </div>
+        <div> <img src="img/bottom_132437.jpeg" alt="">
+            <h4>Theth Weating</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus distinctio accusantium!
+                Eius, magnam. Incidunt?</p>
+        </div>
+        <div> <img src="img/bottom_132437.jpeg" alt="">
+            <h4>Theth Weating</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus distinctio accusantium!
+                Eius, magnam. Incidunt?</p>
+        </div>
+        <div> <img src="img/bottom_132437.jpeg" alt="">
+            <h4>Theth Weating</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus distinctio accusantium!
+                Eius, magnam. Incidunt?</p>
+        </div>
+        <div> <img src="img/bottom_132437.jpeg" alt="">
+            <h4>Theth Weating</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus distinctio accusantium!
+                Eius, magnam. Incidunt?</p>
+        </div>
+        <div> <img src="img/bottom_132437.jpeg" alt="">
+            <h4>Theth Weating</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus distinctio accusantium!
+                Eius, magnam. Incidunt?</p>
+        </div>
+    </div>
+</body>
+
+</html>

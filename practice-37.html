@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Example</title>
+</head>
+
+<body>
+    <button id="button">Store Students Data to LS</button>
+    <button id="button2">Get Students Data from LS</button>
+</body>
+<script>
+    document.querySelector("#button").addEventListener("click", myfun);
+    document.querySelector("#button2").addEventListener("click", myfun2);
+
+    function myfun() {
+        let students = [
+            { "name": "Nrupul", "place": "Bangalore" },
+            { "name": "Prateek", "place": "Mumbai" }
+        ];
+        localStorage.setItem("students", JSON.stringify(students));
+    }
+
+    function myfun2() {
+        let storedata = localStorage.getItem('students');
+        if (storedata) {
+            let studentsArray = JSON.parse(storedata);
+
+            for (let i = 0; i < studentsArray.length; i++) {
+                console.log(studentsArray[i]);
+            }
+        } else {
+            console.log("No data found in local storage.");
+        }
+    }
+</script>
+
+</html>

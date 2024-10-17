@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="first">store to ls</button>
+    <button id="second">get from to lc</button>
+    <h1></h1> -->
+    <button>let a hobbies</button>
+    <h1></h1>
+</body>
+<script>
+    // document.querySelector("#first").addEventListener("click" , myfun)
+    // function myfun(){
+    // //    let a= document.createElement("p");
+    //    let mobile=9999999999;
+    //    localStorage.setItem("mobile",JSON.stringify(mobile));
+    // }
+    // document.querySelector("#second").addEventListener("click",myfun2)
+    // function myfun2(){
+       
+    //     let b=localStorage.getItem("mobile");
+    //     document.querySelector("h1").innerText=JSON.parse(b);
+    // }
+    document.querySelector("button").addEventListener("click",myfun)
+    function myfun(){
+        let hobbies =["cricket","music"];
+       localStorage.setItem("hobbies",JSON.stringify(hobbies));
+       document.querySelector('h1').innerText=hobbies;
+       for(let i=0;i<=hobbies.length;i++){
+        console.log(hobbies);
+       }
+    }
+</script>
+</html>

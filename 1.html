@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tre</h1>
+</body>
+<script>
+    // var count=-10;
+    // let countcheck=new Promise(function(resolve,reject){
+    //     if(count>0){
+    //         resolve("true h bhai");
+    //     } else{
+    //         reject("false h bhai");
+    //     }
+    // });
+    // console.log(countcheck);
+    var x=7;
+    var checkx = new Promise(function(resolve,reject){
+        if(x%2==0){
+            resolve("even");
+        }else{
+            reject("odd");
+        };
+    });
+    checkx.then((fromresolve)=>console.log(fromresolve)).catch((fromreject)=>console.log(fromreject));
+</script>
+</html>

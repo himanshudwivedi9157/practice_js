@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-12</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav {
+            display: flex;
+            /* background-color: #5C6BC0; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            height: 80px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 10%;
+        }
+
+        .nav>div {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            /* border: 2px solid red; */
+            display: flex;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            height: 600px;
+        }
+
+        .container>div {
+            width: 48%;
+            height: 100%;
+            /* border: 1px solid green; */
+            /* */
+
+        }
+
+        .container>div>h3 {
+            color: blue;
+            padding-top: 50px;
+            font-weight: bold;
+        }
+
+        .container>div>h1 {
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .container>div>p {
+            margin-top: 30px;
+        }
+
+        .container>div>div {
+            /* border: 1px solid green; */
+            width: 90%;
+            /* margin: auto; */
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .container>div>div>img {
+            width: 50%;
+        }
+
+        #parent-id {
+            /* border: 2px solid green; */
+            width: 100%;
+            height: 45%;
+            display: flex;
+            justify-content: space-between;
+            /* text-align: center; */
+           
+            margin: auto;
+
+        }
+
+        #parent-id>div {
+            /* border: 1px solid red; */
+            width: 45%;
+            height: 90%;
+            margin: auto;
+            justify-content: space-between;
+            align-items: flex-end;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        }
+
+        #parent-id>div>img {
+            border-radius: 50%;
+        }
+        #parent-id>div>img,h3,p{
+            padding: 10px 20px 10px 20px;
+        }
+        .nav>h1{
+            background-color: hwb(264 3% 50% / 0.438);
+            padding: 20px;
+            box-shadow: rgb(30, 8, 232);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>StudyLab</h1>
+        <div>
+            <h2>Home</h2>
+            <h2>About</h2>
+            <h2>Course</h2>
+            <h2>Instructor</h2>
+            <h2>Blog</h2>
+            <h2>Contact</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="">
+            <h3>WELCOME TO STUDYLAB</h3>
+            <h1>We Are StudyLab An Online Learning Center</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor saepe ipsum repellat nulla eveniet
+                odit provident! Aut eligendi corrupti neque pariatur quis dolores error voluptas nesciunt, possimus at
+                optio.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi aliquam laborum magni repellendus
+                distinctio omnis dignissimos commodi perspiciatis recusandae sequi ducimus neque consequatur repellat,
+                nobis cupiditate sapiente amet necessitatibus molestias!</p>
+            <div>
+                <img src="img/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg" alt="">
+                <h3>Learn Anythings From StudyLab, Watch Video</h3>
+            </div>
+
+        </div>
+        <div class="second-child">
+            <div id="parent-id">
+                <div>
+                    <img src="img/AAPL@2x.webp" alt="">
+                    <h3>Top Quailty Content</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        tenetur.</p>
+                </div>
+
+                <div>
+                    <img src="img/AAPL@2x.webp" alt="">
+                    <h3>Top Quailty Content</h3>
+                    <p>Lorem ipsum dolor sit ame  runt sunt, esse est ut temporibus ullam
+                        adipisci
+                        tenetur.</p>
+                </div>
+
+
+            </div>
+            <div id="parent-id">
+                <div>
+                    <img src="img/AAPL@2x.webp" alt="">
+                    <h3>Top Quailty Content</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        tenetur.</p>
+                </div>
+
+                <div>
+                    <img src="img/AAPL@2x.webp" alt="">
+                    <h3>Top Quailty Content</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        tenetur.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

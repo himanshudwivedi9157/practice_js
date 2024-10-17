@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-13</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        .container>h1 {
+            text-align: center;
+            font-weight: bold;
+            margin: 50px;
+        }
+
+        .container>div {
+            width: 90%;
+            height: auto;
+            /* border: 2px solid red; */
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px;
+
+        }
+
+        .container>div>div {
+            width: 23%;
+
+            /* border: 1px solid green; */
+            height: 100%;
+            border-radius: 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        }
+
+        .container>div>div>h1 {
+            text-align: center;
+            padding: 90px 0px 110px 0px;
+        }
+
+        .container>div>div:nth-child(2)>h1 {
+            color: red;
+        }
+
+        .container>div>div:nth-child(3)>h1 {
+            color: aquamarine;
+        }
+
+        .container>div>div>p>b {
+            color: blueviolet;
+
+
+        }
+
+        .container>div>div>p>b,
+        h4,
+        p {
+            padding: 0px 10px 25px 20px;
+
+        }
+
+        .btn {
+            padding: 15px 30px 15px 30px;
+            text-align: center;
+            border: 2px red solid;
+            color: red;
+            font-weight: bolder;
+            border-radius: 10px;
+            background-color: white;
+
+        }
+
+        .button {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .second {
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        }
+
+        .second>h1 {
+            text-align: center;
+            font-weight: bolder;
+            font-family: 50px;
+            padding: 90px 0px 110px 0px;
+        }
+
+        .second>div {
+            width: 80%;
+            /* border: 2px solid red; */
+            margin: auto;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .second>div>div {
+            width: 30%;
+            height: 100%;
+            /* border: 2px solid red; */
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+        }
+
+        .second>div>div>img {
+            width: 30%;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+           
+        }
+        .second>div>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Masai News In The News</h1>
+
+        <div>
+            <div>
+                <h1>The Econamic Times</h1>
+                <p><b>23/10/2002</b></p>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Solutatate voluptatibus nam reprehenderit
+                    blanditiis quidem et.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illo quos magni.</p>
+            </div>
+            <div>
+                <h1>The Econamic Times</h1>
+                <p><b>23/10/2002</b></p>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Solutatate voluptatibus nam reprehenderit
+                    blanditiis quidem et.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illo quos magni.</p>
+            </div>
+            <div>
+                <h1>The Econamic Times</h1>
+                <p><b>23/10/2002</b></p>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Solutatate voluptatibus nam reprehenderit
+                    blanditiis quidem et.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illo quos magni.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="button">
+        <button class="btn">SEE MORE ></button>
+    </div>
+    <div class="second">
+        <h1>OUR INVESTERS, WHO BELIVE IN US</h1>
+        <div>
+            <div>
+                <img src="img/AAPL@2x.webp" alt="">
+            </div>
+            <div> <img src="img/AAPL@2x.webp" alt=""></div>
+            <div> <img src="img/AAPL@2x.webp" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>

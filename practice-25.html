@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Calculator</title>
+    <style>
+#main{
+width: 30%;
+border-radius: 10px;
+margin: auto;
+margin-top: 100px;
+    background-color: aliceblue;
+    display: grid;
+    /* grid-template-columns: repeat(2,200px); */
+    justify-content: space-evenly;
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="main">
+    <input type="number" name="" id="first"/>
+    <input type="number" name="" id="second"/>
+    
+   
+    <button onclick="add()" type="submit">+</button>
+    <button onclick="sub()" type="submit">-</button>
+    <button onclick="multiply()" type="submit">*</button>
+    <button onclick="divide()" type="submit">/</button>
+    <h1>output: </h1>
+    <h2 id="output"></h2>
+    </div>
+</body>
+<script>
+    // for add
+    function add(){
+        let x = parseInt(document.getElementById("first").value);
+        let y = parseInt(document.getElementById("second").value);
+        let z = x + y;
+        alert(z);
+        console.log(z);
+document.getElementById("output").innerText=z;
+    }
+    
+
+    // for minus
+    function sub(){
+        let x= document.getElementById("first").value;
+        let y=document.getElementById("second").value;
+        let z=x-y;
+        alert(z);
+        console.log(z);
+    }
+
+    // for multiply
+    function multiply(){
+        let x= document.getElementById("first").value;
+        let y= document.getElementById("second").value;
+        let z=x*y;
+        alert(z);
+        console.log(z);
+    }
+
+    // for divide
+    function divide(){
+        let x= document.getElementById("first").value;
+        let y=document.getElementById("second").value;
+        let z=x/y;
+        alert(z);
+        console.log(z);
+    }
+</script>
+</html>

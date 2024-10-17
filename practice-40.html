@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phonpay</title>
+    <style>
+        #design{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+          
+        }
+        #phonepay{
+            padding: 10px 40px 10px 40px;
+            background-color: green;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="phonepay">Pay</button>
+
+</body>
+<script>
+    document.querySelector("#phonepay").addEventListener("click", payment);
+
+function payment() {
+  var myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Simulating a successful payment, you can customize this logic
+      var paymentAmount = parseFloat(prompt("Enter the payment amount in rupees:"));
+    
+      
+      if (paymentAmount < 100) {
+         reject(showFailure());
+      } else {
+        resolve(showSuccess()); 
+      }
+    }, 2000);
+  });
+
+  myPromise
+    .then((successElement) => {
+      document.body.appendChild(successElement);
+    })
+    .catch((failureElement) => {
+      document.body.appendChild(failureElement);
+    });
+}
+
+function showSuccess() {
+  var successElement = document.createElement("h1");
+  successElement.innerText = "Payment successful!";
+  return successElement;
+}
+
+function showFailure() {
+  var failureElement = document.createElement("h1");
+  failureElement.innerText = "Payment failed!";
+  return failureElement;
+ 
+}
+
+</script>
+</html>

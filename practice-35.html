@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local-storage</title>
+    <style>
+        img {
+            background-color: red;
+        }
+
+        button {
+            padding: 10px;
+            background-color: aqua;
+            color: black; 
+            border: none;
+            border-radius: 10px;
+            
+        }
+        .main{
+            /* border: 2px solid red; */
+            width: 251px;
+            margin: auto;
+            display: block;
+            flex-direction: column;
+        }
+        .main>div{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img src="img/INDlogo_black_tm.webp" alt="">
+        <div><button id="like">like Me</button>
+            <h1></h1>
+            <button id="dislike">dislike</button>
+            <h2></h2>
+       </div>
+       
+    </div>
+</body>
+<script>
+  document.querySelector("#like").addEventListener("click", myfun);
+    document.querySelector("#dislike").addEventListener("click", myfun2);
+
+    let likeCount = parseInt(localStorage.getItem("like")) || 0;;
+    let dislikeCount = parseInt(localStorage.getItem("dislike")) || 0;
+
+    document.querySelector("h1").innerText = likeCount;
+    document.querySelector("h2").innerText = dislikeCount;
+
+    function myfun() {
+        likeCount++;
+        localStorage.setItem("like", likeCount);
+        document.querySelector("h1").innerText = likeCount;
+    }
+
+    function myfun2() {
+        dislikeCount++;
+        localStorage.setItem("dislike", dislikeCount);
+        document.querySelector("h2").innerText = dislikeCount;
+    }
+</script>
+
+</html>
